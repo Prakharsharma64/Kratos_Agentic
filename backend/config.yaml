@@ -1,0 +1,35 @@
+vram:
+  soft_limit: 0.85
+  hard_limit: 0.92
+
+models:
+  cache_dir: "./models"
+  auto_download: true
+  device: "cuda"  # or "cpu"
+
+plugins:
+  enabled:
+    - text_input
+    - audio_input
+    - intent_classifier
+    - complexity_detector
+  disabled:
+    - sql_builder  # Disable if no database configured
+
+council:
+  simple_threshold: 0.3
+  medium_threshold: 0.6
+  full_threshold: 0.8
+  time_limit_per_member: 10  # seconds
+
+memory:
+  confidence_threshold: 0.5
+  decay_rate: 0.02
+  cleanup_threshold: 0.2
+
+humanization:
+  emoji_max_per_message: 3
+  exclude_domains:
+    - legal
+    - medical
+    - sql

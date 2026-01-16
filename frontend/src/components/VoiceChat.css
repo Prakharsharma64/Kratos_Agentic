@@ -1,0 +1,38 @@
+.voice-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.voice-chat-header {
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-indicator.connected {
+  background: #4ade80;
+}
+
+.status-indicator.disconnected {
+  background: #ef4444;
+}
+
+.voice-chat-footer {
+  padding: 1rem;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+}

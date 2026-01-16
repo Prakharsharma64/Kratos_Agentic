@@ -1,0 +1,33 @@
+.audio-visualizer {
+  margin-bottom: 1rem;
+}
+
+.waveform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 40px;
+}
+
+.wave-bar {
+  width: 3px;
+  background: #3b82f6;
+  border-radius: 2px;
+  animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.processing-indicator {
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
